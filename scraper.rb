@@ -5,5 +5,5 @@ require 'pry'
 require 'wikidata/fetcher'
 
 names = EveryPolitician::Wikidata.morph_wikinames(source: 'tmtmtmtm/aland-lagting-wikipedia', column: 'wikiname')
-EveryPolitician::Wikidata.scrape_wikidata(names: { sv: names }, output: true)
+EveryPolitician::Wikidata.scrape_wikidata(names: { sv: names }, output: false)
 warn EveryPolitician::Wikidata.notify_rebuilder
